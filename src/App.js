@@ -28,7 +28,7 @@ class App extends React.Component {
         <Nav state={this.state} clickCallback={this.changePageState}/>
           {this.state.page.label === "Home" && <Home/>}
           {this.state.page.label === "About" && <About/>}
-        <Footer state={this.state} />
+        <Footer state={this.state} clickCallback={this.changePageState}/>
       </div>
   )
 }
